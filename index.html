@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Basic SEO -->
+    <meta
+      name="description"
+      content="A responsive calculator built with HTML, CSS and JavaScript. Perform basic arithmetic operations with a clean interface, theme switching, and interactive calculator buttons."
+    />
+
+    <meta
+      name="keywords"
+      content="calculator, online calculator, JavaScript calculator, HTML CSS JavaScript calculator, responsive calculator, frontend calculator project"
+    />
+
+    <meta name="author" content="Igweike Joseph-praise" />
+
+    <meta name="theme-color" content="#3f4d70" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Calculator | Joseph Igweike" />
+
+    <meta
+      property="og:description"
+      content="A responsive calculator built with HTML, CSS and JavaScript, featuring basic arithmetic operations, interactive buttons, and multiple themes."
+    />
+
+    <meta property="og:image" content="calculator.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Calculator | Joseph Igweike" />
+
+    <meta
+      name="twitter:description"
+      content="A responsive calculator built with HTML, CSS and JavaScript, featuring basic arithmetic operations and multiple themes."
+    />
+
+  
+    <title>Calculator</title>
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+
+    <link rel="stylesheet" href="calcu.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-background">
+      <div class="main-header">
+        <h1>calc</h1>
+        <div class="theme">
+          <span class="theme-title">Theme</span>
+
+          <div class="theme-controls">
+            <div class="theme-numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+
+            <div class="theme-toggle" id="themeToggle">
+              <span class="toggle-circle"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="display" id="keypad">
+        <input type="text" id="display" value="0" readonly />
+      </section>
+
+      <section class="keypad">
+        <button class="number-key">7</button>
+        <button class="number-key">8</button>
+        <button class="number-key">9</button>
+        <button class="delete-key" id="delete">DEL</button>
+
+        <button class="number-key">4</button>
+        <button class="number-key">5</button>
+        <button class="number-key">6</button>
+        <button class="operator-key">+</button>
+
+        <button class="number-key">1</button>
+        <button class="number-key">2</button>
+        <button class="number-key">3</button>
+        <button class="operator-key">-</button>
+
+        <button class="number-key">.</button>
+        <button class="number-key">0</button>
+        <button class="operator-key">/</button>
+        <button class="operator-key">x</button>
+
+        <button class="reset-key" id="reset">RESET</button>
+        <button class="equals-key" id="equals">=</button>
+      </section>
+    </main>
+    <script src="calcu.js"></script>
+  </body>
+</html>
